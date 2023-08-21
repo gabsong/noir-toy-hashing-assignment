@@ -11,8 +11,8 @@ The basic implementation of an FNV algorithm in python is given below:
 ```python
 def fnv_hash(data):
     size = 2**32
-    hash_value = 0x811C9DC5
-    prime = 0x1000193
+    hash_value = 0x811C9DC5 # 2166136261
+    prime = 0x1000193 # 16777619
 
     for byte in data:
         product = (hash_value * prime) % size
